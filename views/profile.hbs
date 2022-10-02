@@ -1,0 +1,120 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    {{!-- 
+    <link rel="stylesheet" href="https://unpkg.com/easymde/dist/easymde.min.css">
+    <script src="https://unpkg.com/easymde/dist/easymde.min.js"></script>
+     --}}
+
+
+    {{!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/simplemde/latest/simplemde.min.css">
+    <script src="https://cdn.jsdelivr.net/simplemde/latest/simplemde.min.js"></script> --}}
+
+    <script src="https://cdn.jsdelivr.net/npm/@editorjs/editorjs@latest"></script>
+
+
+    {{!-- <script src="https://cdn.ckeditor.com/ckeditor5/35.1.0/classic/ckeditor.js"></script> --}}
+
+    <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
+
+
+
+    <title>Document</title>
+</head>
+<body>
+
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Saif Blog</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/register">Register</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/logout">logout</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>x 
+
+
+
+    <div class="container">
+        <div class="toolbar">
+            <i class="fa-solid fa-image image-icon icon"></i>
+            <i class="fa-solid fa-paragraph text-icon icon"></i>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="edit-area">
+
+            <div class="edit-container">
+                <div class="edit-text">
+                    <textarea placeholder="Input Text Here" id="textarea"></textarea>
+                </div>
+                <button class="text-done done">Insert text</button>
+            </div>
+
+            <div class="edit-container">
+                <div class="edit-image">
+
+                    {{!-- <input type="file" class="image-input"> --}}
+                    {{!-- <button onclick="getFile()" class="file-upload-button">Click to upload!</button> --}}
+                    {{!-- <div style='height: 0px;width:0px; overflow:hidden;'>
+                        <input id="upfile" type="file" value="upload" class="image-input"/>
+                    </div> --}}
+
+                    <i onclick="getFile()" class="file-upload-button fa-solid fa-image image-icon icon"></i>
+                    <span class="upload-text" style="font-size: 18px">Upload Image</span>
+                    <div style='height: 0px; width: 0px; overflow: hidden;'>
+                        <input id="upfile" type="file" value="upload" class="image-input"/>
+                    </div>
+                    <script>
+                       
+                    </script>
+
+                </div>
+                <button class="image-done done">Insert image</button>
+            </div>
+
+        </div>
+    </div>  
+
+    {{!-- <div id="editorjs"></div>
+    <button class="editor">editor</button> --}}
+
+
+    {{!-- <div class="display-image"></div> --}}
+
+    <section class="page"></section>  
+
+    <div class="success">{{message}}</div>
+
+    <script src="/functions.js"></script>
+
+
+
+</body>
+</html>
